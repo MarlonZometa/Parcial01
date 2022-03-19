@@ -1,0 +1,26 @@
+﻿@model Parcial01.Models.Acciones
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<center><h1>Cajero</h1></center>
+<div class="color">
+    <form asp-controller="Home" asp-action="Retiro">
+        <div class="card c">
+
+            @if (ViewBag.MontoV1 == 0)
+            {
+                <input type="text" placeholder="monto a retirar" asp-for="Monto" min="0" max="1000" />
+            }else{
+                <input type="text" placeholder="monto a retirar" asp-for="Monto" value="@ViewBag.MontoV1" class="form-control"  min="0" max="1000" />
+            }
+ 
+        </div>
+
+        <button class="btn btn-warning t ">Retirar monto</button>
+         
+    </form>
+</div>

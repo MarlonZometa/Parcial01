@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="wwwroot/css/error.css">
+<!------ Include the above in your HEAD tag ---------->
+<form asp-controller="Home" asp-action="Exito">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-template">
+                    <center><h1>
+                        Transaccion Realizada!</h1>
+                    <h2>
+                        Su transaccion se relaizo de manera exitosa</h2>
+                    <div class="error-details">
+                        ¡Puede retirar su dinero!
+                    </div></center>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
